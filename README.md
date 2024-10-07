@@ -20,5 +20,5 @@ pip install -r requirements.txt
 
 Run the project:
 ```bash
-python app/main.py
+python -m app.main
 ```

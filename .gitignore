@@ -1,3 +1,6 @@
+# on-the-go generated files
+kbl.db
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
