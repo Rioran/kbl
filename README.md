@@ -1,7 +1,9 @@
-# kbl
-cs50 final project: Keyboard Layouter - local configurable keyboard layouts via web form and files exchange
+# KBL
+cs50 final project: **Keyboard Layouter** - local configurable keyboard layouts via web form and files exchange.
 
-# Project startup
+**kbl file specification** can be found [HERE](kbl_file_spec.md).
+
+## Project startup
 
 Deploy venv on Windows:
 ```bash
@@ -23,7 +25,7 @@ Run the project:
 python -m app.main
 ```
 
-# utility commands
+## utility commands
 
 Run tests
 ```bash
