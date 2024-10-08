@@ -1,13 +1,13 @@
 """Main entrypoint into the application."""
+import uvicorn
+
 from app.datamodel.model_base import setup_db
-from app.crud.inserts import insert_layout_entry
+from app.web.site import app
 
 
 def main():
-    print('start')
     setup_db()
-    insert_layout_entry({'name': '!', 'description': 'Just a test one.'})
-    print('db set up')
+    uvicorn.run(app, host='localhost', port=5000, log_level='debug')
 
 
 if __name__ == '__main__':

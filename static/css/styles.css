@@ -1,0 +1,35 @@
+body {
+    background-color: aquamarine;
+    font-size: 20px;
+    text-align: center;
+    margin-left: max(16px, 5vw);
+    margin-right: max(16px, 5vw);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin: 5px;
+    gap: 0px;
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+footer {
+    margin-top: max(16px, 5vh);
+    border-top: 1px solid black;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
