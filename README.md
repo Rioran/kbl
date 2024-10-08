@@ -22,3 +22,10 @@ Run the project:
 ```bash
 python -m app.main
 ```
+
+# utility commands
+
+Run tests
+```bash
+pytest test/
+```

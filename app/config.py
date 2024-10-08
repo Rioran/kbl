@@ -6,9 +6,12 @@ from string import (
 )
 
 
+ROOT_FOLDER = Path(__file__).parent.parent.resolve()
+STATIC_FOLDER = ROOT_FOLDER / 'static'
+TEST_FOLDER = ROOT_FOLDER / 'test'
+
 DB_NAME = 'kbl.db'
-ROOT_FOLDER = Path(__file__).parent.resolve()
-DB_PATH = ROOT_FOLDER / 'database' / DB_NAME
+DB_PATH = ROOT_FOLDER / 'app' / 'database' / DB_NAME
 
 DB_TYPE = 'sqlite'
 
