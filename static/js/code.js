@@ -12,8 +12,7 @@ function print_message(text) {
 }
 
 
-async function install_kbl(file_name) {
-	const url = api_url + `install_kbl?file=${file_name}`;
+async function call_api(url) {
 	try {
 		const response = await fetch(url);
 		if (!response.ok) {
@@ -24,4 +23,16 @@ async function install_kbl(file_name) {
 	} catch (error) {
 		print_message(error.message);
 	}
+}
+
+
+async function install_kbl(file_name) {
+	const url = api_url + `install_kbl?file=${file_name}`;
+	call_api(url);
+}
+
+
+async function toggle_layout(layout_id) {
+	const url = api_url + `toggle_layout?layout_id=${layout_id}`;
+	call_api(url);
 }

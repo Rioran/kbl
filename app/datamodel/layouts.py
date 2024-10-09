@@ -16,6 +16,7 @@ class Layout(Base):
     name: Mapped[str] = mapped_column(unique=True)
     description: Mapped[Optional[str]] = mapped_column()
     shortcut: Mapped[Optional[str]] = mapped_column()
+    is_active: Mapped[bool] = mapped_column(default=False)
 
     created: Mapped[datetime] = mapped_column(server_default=func.now())
     updated: Mapped[datetime] = mapped_column(server_default=func.now())
