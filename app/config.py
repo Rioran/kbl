@@ -8,6 +8,7 @@ from string import (
 
 ROOT_FOLDER = Path(__file__).parent.parent.resolve()
 STATIC_FOLDER = ROOT_FOLDER / 'static'
+KBL_FILES_FOLDER = STATIC_FOLDER / 'kbl_files'
 TEST_FOLDER = ROOT_FOLDER / 'test'
 
 DB_NAME = 'kbl.db'

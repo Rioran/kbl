@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 from datetime import datetime
 from typing import Optional
 
@@ -7,6 +8,7 @@ from sqlalchemy.sql import func
 from .model_base import Base
 
 
+@dataclass
 class Layout(Base):
     __tablename__ = 'layouts'
 

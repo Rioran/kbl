@@ -1,12 +1,16 @@
+from os import listdir
+
+from app.config import KBL_FILES_FOLDER
 from app.crud import insert_layout
 
 
-def parse_and_load_kbl_file(kbl_path):
+def parse_and_load_kbl_file(kbl_file: str):
+    kbl_path = KBL_FILES_FOLDER / kbl_file
     layout, keys = parse_kbl_file(kbl_path)
     insert_layout(layout, keys)
 
 
-def parse_kbl_file(file_path: str) -> tuple(dict, dict):
+def parse_kbl_file(file_path: str) -> (dict, dict):
     """Parse content of KBL file into dictionaries.
 
     Args:
@@ -36,3 +40,13 @@ def parse_kbl_file(file_path: str) -> tuple(dict, dict):
     }
 
     return layout_data, keys_data
+
+
+def get_local_kbl_files_names() -> list[str]:
+    result: list[str] = list()
+
+    for file_name in listdir(KBL_FILES_FOLDER):
+        if file_name.endswith('.kbl'):
+            result.append(file_name)
+
+    return result

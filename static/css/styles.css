@@ -22,6 +22,14 @@ footer {
     border-top: 1px solid black;
 }
 
+.choice:hover {
+	background-color: #5fbf9f;
+}
+
+#message_element {
+	background-color: #cbffee;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

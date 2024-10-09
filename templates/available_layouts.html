@@ -1,0 +1,13 @@
+{% if layouts %}
+    <h3>Available layouts:</h3>
+    {% for layout in layouts %}
+        <div class="choice">
+            <p>
+                {{ layout['name'] }}
+                {% if layout['description'] %}
+                    - {{ layout['description'] }}
+                {% endif %}
+            </p>
+        </div>
+    {% endfor %}
+{% endif %}

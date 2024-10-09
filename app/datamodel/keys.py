@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 from datetime import datetime
 
 from sqlalchemy import ForeignKey
@@ -7,6 +8,7 @@ from sqlalchemy.sql import func
 from .model_base import Base
 
 
+@dataclass
 class Key(Base):
     __tablename__ = 'keys'
 

@@ -1,0 +1,7 @@
+<h3>Default layouts:</h3>
+
+{% for name in kbl_names %}
+    <div class="choice" onclick="install_kbl('{{ name }}')">
+        <p>{{ name }}</p>
+    </div>
+{% endfor %}
