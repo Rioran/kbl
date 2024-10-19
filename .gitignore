@@ -1,5 +1,6 @@
 # on-the-go generated files
 kbl.db
+*.code-workspace
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
